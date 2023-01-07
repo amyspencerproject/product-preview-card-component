@@ -61,7 +61,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Things I learned during this challenge
+
+I have been so focused on using flexbox that I have forgotten that block can also be incorporated when needed. For the desktop view I used flexbox to get the image and product description side by side in the content-wrapper div. I was struggling to get the product image to be the same height as the product description. After putting a ```max-width: 35rem;``` on the content-wrapper div I used ```display: block;``` with ```display: block;
+        max-width: 100%;``` 
 
 To see how you can add code snippets, see below:
 
