@@ -102,15 +102,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 0.4s;
+}
+
+.cart-button:hover {
+    background-color: #1A4032;
 }
 
 .cart-icon {
     padding-right: 0.5rem;
 }
 
-.button-div .cart-button:hover {
-    background-color: #1A4032;
-}
+
 
 /******* MEDIA QUERIES  ********/
 

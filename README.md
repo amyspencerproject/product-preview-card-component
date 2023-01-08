@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [product-preview repo](https://github.com/amyspencerproject/product-preview-card-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [product-preview URL](https://amyspencerproject.github.io/product-preview-card-component/)
 
 
 ### Built with
@@ -71,7 +71,7 @@ CSS
     }
 ```
 Other things I learned 
-- headers should be kept in sequential order. So <h2> should never go before an <h1>.
+- headers should be kept in sequential order. So ```<h2>``` should never go before an ```<h1>```.
 - use rem or px for border-radius settings. This avoid distortions.
 
 ## Author
