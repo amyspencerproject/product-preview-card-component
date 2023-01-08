@@ -73,6 +73,7 @@ CSS
 Other things I learned 
 - headers should be kept in sequential order. So ```<h2>``` should never go before an ```<h1>```.
 - use rem or px for border-radius settings. This avoid distortions.
+- for decorative images such as the shopping cart icon in the button use a blank alternative tex attribute ```alt=""```. If you leave off the alt attibute completely a screen reader will the file name of the image. Since its decorative that is annoying for the person using the screen reader.
 
 ## Author
 
