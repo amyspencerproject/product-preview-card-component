@@ -9,9 +9,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -20,10 +17,7 @@ body {
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
 }
 
 .card-wrapper {
@@ -80,7 +74,6 @@ main {
     justify-content: left;
     flex-flow: row nowrap;
     margin: 1rem 0;
-
 }
 
 .sale-price {
@@ -128,11 +121,6 @@ main {
 
 /* ----------- Tablets larger than 768px wide ----------- */
 @media (min-width: 768px) {
-    body {
-        display: flex;
-        justify-content: center;
-    }
-
     .card-wrapper {
         padding: 10rem 0;
         max-width: 35rem;
@@ -143,11 +131,6 @@ main {
 /* ----------- Desktop Screenlarger than 1200px wide ----------- */
 
 @media (min-width: 1200px) {
-    body {
-        display: flex;
-        justify-content: center;
-    }
-
     .image-section-mobile {
         background-color: hsl(30, 38%, 92%);
         display: none;
@@ -168,7 +151,7 @@ main {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
-        max-width: 35rem;
+        /* max-width: 35rem; */
     }
 
     .product-info {
@@ -176,9 +159,4 @@ main {
         padding: 12em;
         border-radius: 0 0.75rem 0.75rem 0;
     }
-
-    .product-type {
-        width: 100%;
-    }
-
 }
