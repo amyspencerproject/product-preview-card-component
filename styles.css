@@ -1,5 +1,4 @@
 .attribution {
-    /* padding: 2em 1em; */
     font-size: 0.5rem;
     text-align: center;
     margin-top: 2rem;
@@ -10,23 +9,21 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 
-.content-wrapper {
-    /* background-color: hsl(0, 0%, 100%); */
-    margin: 40px 20px;
+.card-wrapper {
+    margin: 40px 0px;
+    width: 90%;
 }
-
-/* p {
-    font-size: 1em;
-} */
 
 .image-section-mobile {
     background-color: hsl(30, 38%, 92%);
-    /* margin: 40px 20px; */
 }
 
 .image-section-desktop {
@@ -36,12 +33,13 @@ body {
 
 .product-image {
     width: 100%;
-    border-radius: 1.5% 1.5% 0% 0%;
+    border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .product-info {
     background-color: hsl(0, 0%, 100%);
     padding: 1rem;
+    border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .product-type {
@@ -49,7 +47,6 @@ body {
     color: #6C7289;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
-    /* margin: 0; */
 }
 
 .product-title {
@@ -118,7 +115,17 @@ body {
 /******* MEDIA QUERIES  ********/
 
 /* ----------- Tablets larger than 768px wide ----------- */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-wrapper {
+        padding: 10rem 0;
+        max-width: 35rem;
+    }
+}
 
 
 /* ----------- Desktop Screenlarger than 1200px wide ----------- */
@@ -137,16 +144,15 @@ body {
     .image-section-desktop {
         background-color: hsl(30, 38%, 92%);
         display: contents;
-        height: 450px;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .product-image {
         display: block;
-        max-width: 100%;
+        border-radius: 0.75rem 0 0 0.75rem;
     }
 
-    .content-wrapper {
+    .card-wrapper {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
@@ -155,9 +161,12 @@ body {
 
     .product-info {
         background-color: hsl(0, 0%, 100%);
-        padding: 15em;
-        /* padding-top: 15rem; */
-        /* padding-bottom: 15rem; */
+        padding: 12em;
+        border-radius: 0 0.75rem 0.75rem 0;
+    }
+
+    .product-type {
+        width: 100%;
     }
 
 }
