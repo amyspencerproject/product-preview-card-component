@@ -9,9 +9,13 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 main {
@@ -40,6 +44,9 @@ main {
 }
 
 .product-info {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
     background-color: hsl(0, 0%, 100%);
     padding: 1rem;
     border-radius: 0 0 0.75rem 0.75rem;
@@ -118,16 +125,6 @@ main {
 
 
 /******* MEDIA QUERIES  ********/
-
-/* ----------- Tablets larger than 768px wide ----------- */
-@media (min-width: 768px) {
-    .card-wrapper {
-        padding: 10rem 0;
-        max-width: 35rem;
-    }
-}
-
-
 /* ----------- Desktop Screenlarger than 1200px wide ----------- */
 
 @media (min-width: 1200px) {
@@ -138,8 +135,8 @@ main {
 
     .image-section-desktop {
         background-color: hsl(30, 38%, 92%);
-        display: contents;
-        /* width: 100%; */
+        display: block;
+        width: 100%;
     }
 
     .product-image {
