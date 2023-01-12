@@ -30,13 +30,12 @@
 <body>
   <main>
     <div class="card-wrapper">
-      <div class="image-section-mobile">
-        <img class="product-image" src="./images/image-product-mobile.jpg"
-          alt="Bottle of perfume surrounded by leaves" />
-      </div>
-      <div class="image-section-desktop">
-        <img class="product-image" src="./images/image-product-desktop.jpg"
-          alt="Bottle of perfume surrounded by leaves" />
+      <div class="contain-image">
+        <picture class="product-image">
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 600px)" />
+          <img class="product-image" src="./images/image-product-mobile.jpg"
+            alt="Bottle of perfume surrounded by leaves" />
+        </picture>
       </div>
       <div class="product-info">
         <p class="product-type">Perfume</p>
