@@ -22,6 +22,7 @@ main {
     display: flex;
     justify-content: center;
     background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
 }
 
 .card-wrapper {
@@ -133,23 +134,18 @@ source {
 
 
 /******* MEDIA QUERIES  ********/
-/* ----------- Desktop Screenlarger than 1200px wide ----------- */
+/* ----------- Screen size larger than 600px wide ----------- */
 
-@media (min-width: 1200px) {
-    /* .image-section-mobile {
-        background-color: hsl(30, 38%, 92%);
-        display: none;
-    } */
-
-    /* .image-section-desktop {
-        background-color: hsl(30, 38%, 92%);
-        display: block;
-        width: 100%;
-    } */
+@media (min-width: 600px) {
 
     .product-image {
         display: block;
         /* height: 100%; */
+        /* height: auto; */
+        /* height: 100vh; */
+        /* height: min-content; */
+        /* height: 450px; */
+        /* width: 600px; */
         width: 100%;
         border-radius: 0.75rem 0 0 0.75rem;
         /* object-fit: cover; */
