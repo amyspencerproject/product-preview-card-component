@@ -9,10 +9,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -30,19 +26,12 @@ main {
     width: 90%;
 }
 
-.image-section-mobile {
-    background-color: hsl(30, 38%, 92%);
-}
-
-.image-section-desktop {
-    background-color: hsl(30, 38%, 92%);
-    display: none;
-}
-
 .product-image {
     display: block;
     width: 100%;
+    height: 100%;
     border-radius: 0.75rem 0.75rem 0 0;
+    object-fit: cover;
 }
 
 .product-info {
@@ -52,13 +41,6 @@ main {
     background-color: hsl(0, 0%, 100%);
     padding: 1rem;
     border-radius: 0 0 0.75rem 0.75rem;
-}
-
-source {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    /* height: 100%; */
 }
 
 .product-type {
@@ -140,21 +122,13 @@ source {
 
     .product-image {
         border-radius: 0.75rem 0 0 0.75rem;
-        display: block;
-        height: auto;
-        /* height: auto; */
-        /* height: 100vh; */
-        /* height: min-content; */
-        /* height: 450px; */
-        /* width: 600px; */
+        /* height: 100%;
         width: 100%;
-        object-fit: fill;
+        object-fit: fill; */
     }
 
     .contain-image {
         width: 50%;
-        /* height: 100%; */
-        /* object-fit: fill; */
     }
 
     .card-wrapper {
@@ -162,15 +136,18 @@ source {
         justify-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        /* max-width: 35rem; */
-        /* height: 100vh; */
     }
 
     .product-info {
         background-color: hsl(0, 0%, 100%);
-        width: 50%;
         border-radius: 0 0.75rem 0.75rem 0;
-        /* height: 100%; */
-        /* object-fit: fill; */
+        padding: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .contain-product {
+        padding: 1rem;
+        width: 70%;
     }
 }
