@@ -53,7 +53,6 @@ main {
     color: #1C232B;
     font-size: 2rem;
     letter-spacing: 0.1rem;
-    /* line-height: 2rem; */
 }
 
 .product-description {
@@ -104,12 +103,15 @@ main {
     padding-right: 0.5rem;
 }
 
-
-
 /******* MEDIA QUERIES  ********/
 /* ----------- Screen size larger than 600px wide ----------- */
 
 @media (min-width: 600px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
 
     .product-image {
         border-radius: 0.75rem 0 0 0.75rem;
@@ -123,11 +125,12 @@ main {
 
     .card-wrapper {
         flex-flow: row nowrap;
+        max-width: 38rem;
     }
 
     .product-info {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         background-color: hsl(0, 0%, 100%);
         border-radius: 0 0.75rem 0.75rem 0;
         width: 50%;
@@ -135,6 +138,9 @@ main {
     }
 
     .contain-product-text {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
         width: 75%;
         margin: 1rem;
     }

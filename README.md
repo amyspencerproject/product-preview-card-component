@@ -84,6 +84,8 @@ Other things I learned
 - use rem or px for border-radius settings. This avoids distortions.
 - for decorative images such as the shopping cart icon in the button use a blank alternative tex attribute ```alt=""```. If you leave off the alt attibute completely a screen reader will the file name of the image. Since its decorative that is annoying for the person using the screen reader.
 - ```align-items:center; ``` kept changing the height of the product info element at the larger screen sizes. I didn't realize this was the culprit and kept focusing on the image.
+- Using divs as containers really helps configure/contrain elements with out causing accessibility issues. At first I was trying ```<section>``` and then I was trying to keep divs to an absolute minimum.
+- 
 
 ## Author
 
