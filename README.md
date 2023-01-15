@@ -70,10 +70,20 @@ CSS
         border-radius: 0.75rem 0 0 0.75rem;
     }
 ```
+Then I used the ```<picture>``` element to make the image responsive without relying on display: hide to show/not show the different images based on screensize.
+
+```
+        <picture class="product-image">
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 600px)" />
+          <img class="product-image" src="./images/image-product-mobile.jpg"
+            alt="Bottle of perfume surrounded by leaves" />
+        </picture>
+```
 Other things I learned 
 - headers should be kept in sequential order. So ```<h2>``` should never go before an ```<h1>```.
-- use rem or px for border-radius settings. This avoid distortions.
+- use rem or px for border-radius settings. This avoids distortions.
 - for decorative images such as the shopping cart icon in the button use a blank alternative tex attribute ```alt=""```. If you leave off the alt attibute completely a screen reader will the file name of the image. Since its decorative that is annoying for the person using the screen reader.
+- ```align-items:center; ``` kept changing the height of the product info element at the larger screen sizes. I didn't realize this was the culprit and kept focusing on the image.
 
 ## Author
 

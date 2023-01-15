@@ -21,8 +21,6 @@ main {
 
 .card-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -37,11 +35,14 @@ main {
 .product-info {
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 0 0.75rem 0.75rem;
-    padding: 2rem 1rem;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .product-type {
-    font-weight: lighter;
     color: #6C7289;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
@@ -52,7 +53,7 @@ main {
     color: #1C232B;
     font-size: 2rem;
     letter-spacing: 0.1rem;
-    line-height: 2rem;
+    /* line-height: 2rem; */
 }
 
 .product-description {
@@ -125,10 +126,16 @@ main {
     }
 
     .product-info {
+        display: flex;
+        align-items: center;
         background-color: hsl(0, 0%, 100%);
         border-radius: 0 0.75rem 0.75rem 0;
         width: 50%;
-        padding: 1rem;
+        padding: 0;
     }
 
+    .contain-product-text {
+        width: 75%;
+        margin: 1rem;
+    }
 }
